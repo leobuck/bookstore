@@ -3,6 +3,8 @@ using System.Web.Mvc;
 
 namespace BookStore.Controllers
 {
+    [RoutePrefix("teste")]
+    [Route("{action=Dados}")]
     public class TesteController : Controller
     {
         public ViewResult Dados()
@@ -42,6 +44,18 @@ namespace BookStore.Controllers
         public JsonResult ActionDois(Autor autor)
         {
             return Json(autor);
+        }
+
+        [Route("minharota/{id:int}")]
+        public string MinhaAction(int id)
+        {
+            return "OK! Cheguei na rota!";
+        }
+
+        [Route("~/rotaignorada/{id:int}")]
+        public string MinhaAction2(int? id)
+        {
+            return "OK! Cheguei na rota ignorada!";
         }
     }
 }
