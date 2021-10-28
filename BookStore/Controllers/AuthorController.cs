@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using BookStore.Filters;
 using System.Web.Mvc;
 
 namespace BookStore.Controllers
 {
     [RoutePrefix("autores")]
+    [LogActionFilter]
     public class AuthorController : Controller
     {
         [Route("listar")]

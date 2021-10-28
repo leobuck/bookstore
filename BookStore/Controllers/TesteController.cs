@@ -64,10 +64,10 @@ namespace BookStore.Controllers
             return "OK! Cheguei na rota! " + categoria;
         }
 
-        [Route("rota/estacao/{estacao:(primavera|verao|outono|inverno)}")]
-        public string MinhaAction4(string estacao)
-        {
-            return "Olá, estamos no " + estacao;
-        }
+        //[Route("rota/estacao/{estacao:(primavera|verao|outono|inverno)}")]
+        //public string MinhaAction4(string estacao)
+        //{
+        //    return "Olá, estamos no " + estacao;
+        //}
     }
 }
