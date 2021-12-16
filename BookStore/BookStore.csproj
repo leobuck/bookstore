@@ -210,6 +210,7 @@
     <Content Include="Views\Livro\Edit.cshtml" />
     <Content Include="Views\Livro\Index.cshtml" />
     <Content Include="Views\Livro\Partials\ListBookPartial.cshtml" />
+    <Content Include="Views\Shared\_LayoutNovo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

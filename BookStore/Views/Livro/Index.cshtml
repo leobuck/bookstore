@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutNovo.cshtml";
 }
 
 <h2>Index</h2>
@@ -11,3 +12,9 @@
 </p>
 
 @Html.Partial("Partials/ListBookPartial", Model)
+
+@section Scripts {
+    <script>
+        alert('Olá');
+    </script>
+}
