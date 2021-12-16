@@ -8,19 +8,19 @@ namespace BookStore.ViewModels
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "*")]
+        [Required(ErrorMessage = "Nome inválido")]
         [Display(Name = "Nome do livro")]
         public string Nome { get; set; }
         
-        [Required(ErrorMessage = "*")]
+        [Required(ErrorMessage = "ISBN inválido")]
         public string ISBN { get; set; }
 
-        [Required(ErrorMessage = "*")]
+        [Required(ErrorMessage = "Data inválida")]
         [Display(Name = "Data de Lançamento")]
         [DataType(DataType.Date)]
         public DateTime DataLancamento { get; set; }
 
-        [Required(ErrorMessage = "*")]
+        [Required(ErrorMessage = "Selecione uma categoria")]
         public int CategoriaId { get; set; }
         public SelectList CategoriaOptions { get; set; }
     }
