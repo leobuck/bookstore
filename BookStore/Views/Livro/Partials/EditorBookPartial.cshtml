@@ -21,3 +21,8 @@
             new { @class = "form-control" })
 </div>
 
+<div class="form-group">
+    @Html.EditorFor(x => x.Age)
+    @Html.ValidationMessageFor(x => x.Age)
+</div>
+

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookStore.Validators;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
@@ -23,5 +24,8 @@ namespace BookStore.ViewModels
         [Required(ErrorMessage = "Selecione uma categoria")]
         public int CategoriaId { get; set; }
         public SelectList CategoriaOptions { get; set; }
+
+        [CheckAgeValidator]
+        public DateTime Age { get; set; }
     }
 }
